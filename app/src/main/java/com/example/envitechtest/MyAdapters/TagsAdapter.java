@@ -1,4 +1,4 @@
-package com.example.envitechtest;
+package com.example.envitechtest.MyAdapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.envitechtest.R;
+import com.example.envitechtest.Objects.Tags;
 import com.google.android.material.imageview.ShapeableImageView;
 
 import java.util.ArrayList;

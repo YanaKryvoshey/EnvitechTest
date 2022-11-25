@@ -1,4 +1,4 @@
-package com.example.envitechtest;
+package com.example.envitechtest.Objects;
 
 public class monitorType {
 

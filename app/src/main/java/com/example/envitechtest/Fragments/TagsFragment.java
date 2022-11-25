@@ -1,14 +1,10 @@
-package com.example.envitechtest;
+package com.example.envitechtest.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,7 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.jetbrains.annotations.NotNull;
+import com.example.envitechtest.Activites.MainActivity;
+import com.example.envitechtest.R;
+import com.example.envitechtest.Objects.Tags;
+import com.example.envitechtest.MyAdapters.TagsAdapter;
 
 import java.util.ArrayList;
 
@@ -56,7 +55,7 @@ private RecyclerView RecyclerView_fragment;
             @Override
             public void handleOnBackPressed() {
                 Log.d("PTTT","PRESS BACK");
-                Intent intent = new Intent(getContext(),MainActivity.class);
+                Intent intent = new Intent(getContext(), MainActivity.class);
                 getActivity().finish();
                 startActivity(intent);
 
@@ -65,7 +64,7 @@ private RecyclerView RecyclerView_fragment;
         };
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), callback);
 
-        // The callback can be enabled or disabled here or in handleOnBackPressed()
+
 
 
 
