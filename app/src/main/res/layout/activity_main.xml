@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main_layout">
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/monitorTypesRecyclerView"-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="280dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        tools:listitem="@layout/monitor_type_list"/>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <ListView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:id="@+id/monitor_type_list_view"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />
+
+    <ListView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:id="@+id/monitor_list_view"
+        android:cacheColorHint="@color/purple_200"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="70dp"-->
+<!--    android:paddingHorizontal="10dp"-->
+<!--    android:layout_gravity="bottom">-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/main_MonitorType_Spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:prompt="@string/spinner_title"-->
+<!--        android:layout_weight="1"-->
+<!--      />-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"/>-->
+<!--</LinearLayout>-->
+
+
+</LinearLayout>
